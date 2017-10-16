@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FaceCell" id="WIZ-ca-sga" customClass="FaceCell">
+            <rect key="frame" x="0.0" y="0.0" width="297" height="224"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="297" height="224"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3e2-9f-xag">
+                        <rect key="frame" x="123.5" y="0.0" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="25I-dI-fdt"/>
+                            <constraint firstAttribute="height" constant="50" id="pnt-kI-cBC"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Omr-45-M6G">
+                        <rect key="frame" x="10" y="65" width="277" height="0.0"/>
+                        <attributedString key="attributedText"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Omr-45-M6G" secondAttribute="trailing" constant="10" id="O5L-cl-43Y"/>
+                <constraint firstItem="3e2-9f-xag" firstAttribute="centerX" secondItem="WIZ-ca-sga" secondAttribute="centerX" id="Uci-Ka-Qu8"/>
+                <constraint firstItem="Omr-45-M6G" firstAttribute="top" secondItem="3e2-9f-xag" secondAttribute="bottom" constant="15" id="ZPm-ht-9nJ"/>
+                <constraint firstItem="Omr-45-M6G" firstAttribute="leading" secondItem="WIZ-ca-sga" secondAttribute="leading" constant="10" id="eLr-em-dZf"/>
+                <constraint firstItem="3e2-9f-xag" firstAttribute="top" secondItem="WIZ-ca-sga" secondAttribute="top" id="xMM-2h-r2U"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="zAl-Sl-42w"/>
+            <size key="customSize" width="297" height="224"/>
+            <connections>
+                <outlet property="detail" destination="Omr-45-M6G" id="hQg-12-Ziv"/>
+                <outlet property="icon" destination="3e2-9f-xag" id="Mnc-qV-iKA"/>
+            </connections>
+            <point key="canvasLocation" x="-50" y="-56"/>
+        </collectionViewCell>
+    </objects>
+</document>
