@@ -118,15 +118,15 @@
             if (faces.count) {
                
                 NSDictionary *result = [info[@"results"] firstObject];
-                NSDictionary *thresholds = info[@"thresholds"];
+//                NSDictionary *thresholds = info[@"thresholds"];
                 NSString *faceToken = result[@"face_token"];
-                CGFloat confidence = [result[@"confidence"] floatValue];
+//                CGFloat confidence = [result[@"confidence"] floatValue];
 //                CGFloat maxThreshold = [thresholds[@"1e-5"] floatValue];
 //                CGFloat midThreshold = [thresholds[@"1e-4"] floatValue];
-                CGFloat minThreshold = [thresholds[@"1e-3"] floatValue];
+//                CGFloat minThreshold = [thresholds[@"1e-3"] floatValue];
                 
-                BOOL vaild = confidence > minThreshold;//置信度大于阈值,才算搜到的是一个人
-                if (faceToken && vaild) {//搜索到人脸
+//                BOOL vaild = confidence > minThreshold;//置信度大于阈值,才算搜到的是一个人
+                if (faceToken ) {//搜索到人脸  && vaild
                     NSLog(@"%@",faceToken);
                        [hud hideAnimated:YES];
                   
