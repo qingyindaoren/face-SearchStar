@@ -123,7 +123,7 @@
                 CGFloat confidence = [result[@"confidence"] floatValue];
 //                CGFloat maxThreshold = [thresholds[@"1e-5"] floatValue];
 //                CGFloat midThreshold = [thresholds[@"1e-4"] floatValue];
-                CGFloat minThreshold = [thresholds[@"1e-2"] floatValue];
+                CGFloat minThreshold = [thresholds[@"1e-3"] floatValue];
                 
                 BOOL vaild = confidence > minThreshold;//置信度大于阈值,才算搜到的是一个人
                 if (faceToken && vaild) {//搜索到人脸

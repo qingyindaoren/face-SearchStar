@@ -244,7 +244,6 @@
 		FFC4AE611F8DC8BB00DA7965 /* AiMei */ = {
 			isa = PBXGroup;
 			children = (
-				FFE0974F1F91EA38005C58A8 /* C */,
 				FFE096C81F905D09005C58A8 /* images */,
 				FFE096A01F8F010B005C58A8 /* Controller */,
 				FFE0967C1F8EF9AC005C58A8 /* AFNetworking */,
@@ -434,13 +433,6 @@
 				FFE097471F90B729005C58A8 /* face.plist */,
 			);
 			path = images;
-			sourceTree = "<group>";
-		};
-		FFE0974F1F91EA38005C58A8 /* C */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = C;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
